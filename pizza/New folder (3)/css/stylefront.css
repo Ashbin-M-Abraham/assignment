@@ -1,0 +1,185 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+header {
+    background-color: #f44336;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Borel', cursive;
+    margin: 0;
+}
+
+.site-logo h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 2.5rem;
+    color: #f44336;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: azure;
+}
+
+.pizza-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+}
+
+.pizza-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.pizza-item img {
+    width: 150px;
+    height: 150px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.pizza-item img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    .pizza-section {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+.order-section {
+    width: 90%;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.order-section h2 {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.order-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Form styles */
+#order-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field label {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-field input[type="text"],
+.form-field input[type="email"],
+.form-field input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.form-field input[type="text"]:focus,
+.form-field input[type="email"]:focus,
+.form-field input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #f44336;
+    box-shadow: 0 0 8px rgba(244, 67, 54, 0.4);
+}
+
+.pizzaimages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+}
+
+.pizzaimages img {
+    width: 100px;
+    height: 100px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.pizzaimages img:hover {
+    transform: scale(1.1);
+}
+
+.form-field p {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-field label,
+.form-field p,
+.form-field input[type="radio"],
+.form-field input[type="checkbox"],
+form-field select {
+    display: inline-block;
+}
+
+.form-field input[type="radio"],
+.form-field input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+button[type="submit"] {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button[type="submit"]:hover {
+    background-color: #e53935;
+}
